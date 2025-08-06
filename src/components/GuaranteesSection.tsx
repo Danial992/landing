@@ -1,0 +1,101 @@
+import React from 'react';
+import { Shield, CheckCircle, Users, MessageCircle, RefreshCw } from 'lucide-react';
+
+const GuaranteesSection: React.FC = () => {
+  const guarantees = [
+    {
+      icon: <CheckCircle className="w-6 h-6" />,
+      title: "Реальные кейсы с цифрами",
+      description: "никакой воды"
+    },
+    {
+      icon: <MessageCircle className="w-6 h-6" />,
+      title: "Ответы на ваши вопросы",
+      description: "30 минут Q&A"
+    },
+    {
+      icon: <Users className="w-6 h-6" />,
+      title: "Контакты и связи",
+      description: "познакомитесь с инвесторами"
+    },
+    {
+      icon: <RefreshCw className="w-6 h-6" />,
+      title: "Возврат денег",
+      description: "если не получите конкретных инструментов"
+    }
+  ];
+
+  return (
+    <section className="py-20 px-6 bg-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            <span className="text-green-600">Ваши гарантии</span> и наши обязательства
+          </h2>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-slate-900 mb-8">Что мы гарантируем:</h3>
+            {guarantees.map((guarantee, index) => (
+              <div key={index} className="flex items-start space-x-4 bg-green-50 p-6 rounded-lg border border-green-200">
+                <div className="bg-green-600 p-3 rounded-lg text-white">
+                  {guarantee.icon}
+                </div>
+                <div>
+                  <h4 className="font-bold text-lg text-slate-900 mb-1">
+                    ✓ {guarantee.title}
+                  </h4>
+                  <p className="text-gray-600">{guarantee.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-slate-900 text-white rounded-2xl p-8">
+            <div className="text-center mb-8">
+              <Shield className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-4">Стоимость участия</h3>
+            </div>
+            
+            <div className="text-center space-y-4">
+              <div className="flex items-center justify-center space-x-4">
+                <span className="text-3xl line-through text-gray-400">75 000 тг</span>
+                <span className="text-5xl font-bold text-yellow-400">45 000 тг</span>
+              </div>
+              <p className="text-lg text-gray-300">
+                специальная цена для первых 10 участников
+              </p>
+              
+              <div className="bg-red-600 text-white px-4 py-2 rounded-lg inline-block">
+                <p className="font-bold">Осталось 3 места по этой цене</p>
+              </div>
+              
+              <div className="bg-yellow-500 bg-opacity-20 border border-yellow-400 rounded-lg p-4 mt-6">
+                <p className="text-yellow-300 text-sm">
+                  💡 Цена одной консультации по недвижимости — 50 000 тг<br />
+                  За встречу вы получите знания стоимостью более 500 000 тг
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-green-600 to-green-700 text-white rounded-2xl p-8 text-center">
+          <h3 className="text-2xl font-bold mb-6">100% гарантия возврата денег</h3>
+          <p className="text-lg mb-6 max-w-3xl mx-auto leading-relaxed">
+            Если в течение встречи вы не получите конкретных инструментов, 
+            которые можно применить к своим объектам, — мы вернем вам полную стоимость участия. 
+            <span className="font-bold"> Без вопросов и объяснений.</span>
+          </p>
+          <div className="flex items-center justify-center space-x-4">
+            <Shield className="w-8 h-8" />
+            <span className="text-xl font-semibold">Ваш риск = 0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default GuaranteesSection;
