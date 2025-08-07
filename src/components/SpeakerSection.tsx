@@ -36,29 +36,29 @@ const SpeakerSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white">
+    <section className="py-20 px-6 bg-[#1D3557] text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Почему стоит учиться именно у <span className="text-yellow-400">Мадияра Кыстаубаева</span>
+            Почему стоит учиться именно у <span className="text-[#F4A261]">Мадияра Кыстаубаева</span>
           </h2>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="bg-yellow-500 text-slate-900 rounded-2xl p-8 shadow-lg">
+            <div className="bg-[#F4A261] text-[#1D3557] rounded-2xl p-8 shadow-lg">
               <h3 className="text-3xl font-bold mb-6 text-center">Мадияр Кыстаубаев</h3>
               <div className="space-y-4 text-lg">
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-slate-900 rounded-full"></div>
+                  <div className="w-2 h-2 bg-[#1D3557] rounded-full"></div>
                   <span>Основатель и CEO Steeltech Group</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-slate-900 rounded-full"></div>
+                  <div className="w-2 h-2 bg-[#1D3557] rounded-full"></div>
                   <span>15+ лет в коммерческой недвижимости</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-slate-900 rounded-full"></div>
+                  <div className="w-2 h-2 bg-[#1D3557] rounded-full"></div>
                   <span>Портфель проектов: 2.5 млрд тг</span>
                 </div>
               </div>
@@ -69,19 +69,22 @@ const SpeakerSection: React.FC = () => {
                 "Каждый объект — это не просто здание, это финансовый инструмент, 
                 который должен работать на владельца 24/7"
               </blockquote>
-              <p className="text-yellow-400 font-semibold">— Мадияр Кыстаубаев</p>
+              <p className="text-[#F4A261] font-semibold">— Мадияр Кыстаубаев</p>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             {achievements.map((achievement, index) => (
-              <div key={index} className="bg-slate-800 rounded-xl p-6 border border-slate-700 shadow hover:bg-slate-700 transition-colors">
+              <div
+                key={index}
+                className="bg-[#274C77] rounded-xl p-6 border border-[#1D3557] shadow hover:bg-[#345B8C] transition-colors"
+              >
                 <div className="flex items-start space-x-4">
-                  <div className="bg-yellow-500 p-3 rounded-lg text-slate-900">
+                  <div className="bg-[#F4A261] p-3 rounded-lg text-[#1D3557]">
                     {achievement.icon}
                   </div>
                   <div>
-                    <h4 className="font-bold text-lg text-yellow-400 mb-1">
+                    <h4 className="font-bold text-lg text-[#F4A261] mb-1">
                       {achievement.title}
                     </h4>
                     <p className="text-white text-sm">
@@ -95,15 +98,15 @@ const SpeakerSection: React.FC = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-slate-800 rounded-xl p-8 max-w-4xl mx-auto border border-slate-700 shadow">
-            <h3 className="text-2xl font-bold mb-6 text-yellow-400">
+          <div className="bg-[#274C77] rounded-xl p-8 max-w-4xl mx-auto border border-[#1D3557] shadow">
+            <h3 className="text-2xl font-bold mb-6 text-[#F4A261]">
               Почему я делюсь своими знаниями?
             </h3>
             <p className="text-lg text-white leading-relaxed">
               За 15 лет работы я понял: успех в недвижимости — это не везение, а система. 
               Я хочу, чтобы больше людей в Казахстане умели создавать реальную ценность, 
               а не просто покупали квадратные метры в надежде на рост. 
-              <span className="text-yellow-400 font-semibold"> Вместе мы поднимем весь рынок.</span>
+              <span className="text-[#F4A261] font-semibold"> Вместе мы поднимем весь рынок.</span>
             </p>
           </div>
         </div>
