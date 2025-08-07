@@ -34,7 +34,7 @@ const CaseStudies: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-            <span className="text-green-600">Реальные цифры</span> реальных проектов
+            <span className="text-cyan-600">Реальные цифры</span> реальных проектов
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Каждый кейс подкреплен документами, договорами и финансовыми отчетами
@@ -43,36 +43,39 @@ const CaseStudies: React.FC = () => {
 
         <div className="grid lg:grid-cols-3 gap-8">
           {cases.map((caseStudy, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300"
+            >
               <div className="bg-gradient-to-r from-slate-800 to-slate-700 text-white p-6">
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="bg-yellow-500 p-3 rounded-lg text-slate-900">
+                  <div className="bg-cyan-600 p-3 rounded-lg text-white">
                     {caseStudy.icon}
                   </div>
                   <h3 className="text-xl font-bold">{caseStudy.title}</h3>
                 </div>
               </div>
-              
+
               <div className="p-6 space-y-4">
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">Исходная ситуация:</h4>
                   <p className="text-gray-600">{caseStudy.problem}</p>
                 </div>
-                
+
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">Вложения:</h4>
                   <p className="text-gray-600">{caseStudy.investment}</p>
                 </div>
-                
+
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">Результат:</h4>
                   <p className="text-gray-600">{caseStudy.result}</p>
                 </div>
-                
-                <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+
+                <div className="bg-cyan-50 border border-cyan-200 rounded-lg p-4">
                   <div className="flex items-center justify-center space-x-2">
-                    <TrendingUp className="w-6 h-6 text-green-600" />
-                    <span className="text-2xl font-bold text-green-600">{caseStudy.roi}</span>
+                    <TrendingUp className="w-6 h-6 text-cyan-600" />
+                    <span className="text-2xl font-bold text-cyan-600">{caseStudy.roi}</span>
                   </div>
                 </div>
               </div>
@@ -84,7 +87,7 @@ const CaseStudies: React.FC = () => {
           <p className="text-lg text-gray-600 mb-8">
             Хотите узнать детали каждого кейса и как применить их к своим объектам?
           </p>
-          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105">
+          <button className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105">
             Изучить кейсы на встрече
           </button>
         </div>
