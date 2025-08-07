@@ -81,9 +81,11 @@ const UrgencySection: React.FC = () => {
               модернизируют их и захватывают рынок. <br />
               <span className="text-[#53A4B1] font-bold">Каждый день промедления стоит денег.</span>
             </p>
+            <a href="#contact-form">
             <button className="bg-[#53A4B1] hover:bg-[#38747E] text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105">
               Действовать прямо сейчас
             </button>
+            </a>
           </div>
         </div>
       </div>
