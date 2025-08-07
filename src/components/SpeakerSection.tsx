@@ -99,4 +99,20 @@ const SpeakerSection: React.FC = () => {
 
         <div className="mt-16 text-center">
           <div className="bg-[#306770] rounded-xl p-8 max-w-4xl mx-auto border border-[#143A41] shadow">
-            <h3 className
+            <h3 className="text-2xl font-bold mb-6 text-[#53A4B1]">
+              Почему я делюсь своими знаниями?
+            </h3>
+            <p className="text-lg text-white leading-relaxed">
+              За 15 лет работы я понял: успех в недвижимости — это не везение, а система. 
+              Я хочу, чтобы больше людей в Казахстане умели создавать реальную ценность, 
+              а не просто покупали квадратные метры в надежде на рост. 
+              <span className="text-[#53A4B1] font-semibold"> Вместе мы поднимем весь рынок.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SpeakerSection;
