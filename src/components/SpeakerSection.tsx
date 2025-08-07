@@ -40,14 +40,14 @@ const SpeakerSection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Почему стоит учиться именно у <span className="text-yellow-400">Мадияра Марата</span>
+            Почему стоит учиться именно у <span className="text-yellow-400">Мадияра Кыстаубаева</span>
           </h2>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="bg-yellow-500 text-slate-900 rounded-2xl p-8">
-              <h3 className="text-3xl font-bold mb-6 text-center">Мадияр Марат</h3>
+              <h3 className="text-3xl font-bold mb-6 text-center">Мадияр Кыстаубаев</h3>
               <div className="space-y-4 text-lg">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-slate-900 rounded-full"></div>
@@ -69,7 +69,7 @@ const SpeakerSection: React.FC = () => {
                 "Каждый объект — это не просто здание, это финансовый инструмент, 
                 который должен работать на владельца 24/7"
               </blockquote>
-              <p className="text-yellow-400 font-semibold">— Мадияр Марат</p>
+              <p className="text-yellow-400 font-semibold">— Мадияр Кыстаубаев</p>
             </div>
           </div>
 
