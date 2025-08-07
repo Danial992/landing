@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
               </h1>
               
               <h2 className="text-xl lg:text-2xl text-gray-200 leading-relaxed">
-                Закрытая встреча с <span className="text-yellow-400 font-semibold">Мадияром Маратом</span> — человеком, который модернизировал 100 000 м² и продал последний объект за <span className="text-green-400 font-bold">206 млн тг</span> (в 2 раза дороже покупки)
+                Закрытая встреча с <span className="text-yellow-400 font-semibold">Мадияром Кыстаубаев</span> — человеком, который модернизировал 100 000 м² и продал последний объект за <span className="text-green-400 font-bold">206 млн тг</span> (в 2 раза дороже покупки)
               </h2>
             </div>
 
