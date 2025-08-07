@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Clock, Users, FileText, TrendingUp } from 'lucide-react';
 
 const ProgramSection: React.FC = () => {
-  const [expandedSection, setExpandedSection] = useState<number | null>(null);
+  const [expanded, setExpanded] = useState<number | null>(null);
 
-  const programParts = [
+  const program = [
     {
       time: "12:00-13:00",
       title: "Анализ и поиск объектов",
@@ -50,11 +50,11 @@ const ProgramSection: React.FC = () => {
         </div>
 
         <div className="space-y-6">
-          {programParts.map((part, index) => (
-            <div key={index} className="bg-slate-50 rounded-lg shadow-lg overflow-hidden">
-              <div 
+          {program.map((part, i) => (
+            <div key={i} className="bg-slate-50 rounded-lg shadow-lg overflow-hidden">
+              <div
                 className="bg-slate-800 text-white p-6 cursor-pointer hover:bg-slate-700 transition-colors"
-                onClick={() => setExpandedSection(expandedSection === index ? null : index)}
+                onClick={() => setExpanded(expanded === i ? null : i)}
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
@@ -64,7 +64,7 @@ const ProgramSection: React.FC = () => {
                     <div>
                       <div className="flex items-center space-x-4 mb-2">
                         <span className="bg-yellow-500 text-slate-900 px-3 py-1 rounded text-sm font-bold">
-                          ЧАСТЬ {index + 1}
+                          ЧАСТЬ {i + 1}
                         </span>
                         <span className="flex items-center space-x-2 text-sm text-gray-300">
                           <Clock className="w-4 h-4" />
@@ -74,18 +74,19 @@ const ProgramSection: React.FC = () => {
                       <h3 className="text-2xl font-bold">{part.title}</h3>
                     </div>
                   </div>
-                  {expandedSection === index ? 
-                    <ChevronUp className="w-8 h-8 text-yellow-400" /> : 
+                  {expanded === i ? (
+                    <ChevronUp className="w-8 h-8 text-yellow-400" />
+                  ) : (
                     <ChevronDown className="w-8 h-8 text-yellow-400" />
-                  }
+                  )}
                 </div>
               </div>
-              
-              {expandedSection === index && (
+
+              {expanded === i && (
                 <div className="p-6 bg-white">
                   <ul className="space-y-4">
-                    {part.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-start space-x-3">
+                    {part.items.map((item, j) => (
+                      <li key={j} className="flex items-start space-x-3">
                         <div className="bg-green-100 rounded-full p-1 mt-1">
                           <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                         </div>
