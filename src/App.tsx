@@ -25,6 +25,7 @@ function App() {
       <InvestmentProjects />
       <UrgencySection />
       <GuaranteesSection />
+      <ContactForm /> {/* 👈 ДОБАВИЛИ форму сюда */}
       <FinalCTA />
     </div>
   );
