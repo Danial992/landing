@@ -41,7 +41,7 @@ const SolutionSection: React.FC = () => {
           </div>
           <p className="text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
             За 3 часа вы получите пошаговую систему, которая позволила мне и моим клиентам 
-            <span className="text-cyan-300 font-bold"> увеличивать стоимость объектов в 2-3 раза</span> 
+            <span className="text-cyan-300 font-bold"> увеличивать стоимость объектов в 2-3 раза </span> 
             за счет правильной реконструкции
           </p>
         </div>
