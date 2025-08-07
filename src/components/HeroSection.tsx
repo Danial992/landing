@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
               </h1>
               
               <h2 className="text-xl lg:text-2xl text-gray-200 leading-relaxed">
-                Закрытая встреча с <span className="text-yellow-400 font-semibold">Мадияром Кыстаубаев</span> — человеком, который модернизировал 100 000 м² и продал последний объект за <span className="text-green-400 font-bold">206 млн тг</span> (в 2 раза дороже покупки)
+                Закрытая встреча с <span className="text-yellow-400 font-semibold">Мадияром Кыстаубаевым</span> — человеком, который модернизировал 100 000 м² и продал последний объект за <span className="text-green-400 font-bold">206 млн тг</span> (в 2 раза дороже покупки)
               </h2>
             </div>
 
@@ -101,7 +101,7 @@ const HeroSection: React.FC = () => {
           <div className="relative">
             <div className="bg-slate-800 rounded-2xl p-8 shadow-2xl">
               <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl p-6 text-slate-900">
-                <h3 className="text-2xl font-bold mb-4">Мадияр Марат</h3>
+                <h3 className="text-2xl font-bold mb-4">Мадияр Кыстаубаев</h3>
                 <div className="space-y-2 text-sm">
                   <p>🏢 Steeltech Group</p>
                   <p>📊 100 000 м² модернизированной недвижимости</p>
