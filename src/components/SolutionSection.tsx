@@ -67,10 +67,22 @@ const SolutionSection: React.FC = () => {
         </div>
 
         <div className="text-center">
-          <button className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105 inline-flex items-center space-x-2">
-            <span>Получить доступ к методологии</span>
-            <ArrowRight className="w-6 h-6" />
-          </button>
+          <a href="#contact-form">
+  <button className="bg-[#53A4B1] hover:bg-[#38747E] text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105 inline-flex items-center space-x-2">
+    <span>Получить доступ к методологии</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-6 w-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+</a>
+
         </div>
       </div>
     </section>
