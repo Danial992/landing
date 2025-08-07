@@ -46,7 +46,7 @@ const SpeakerSection: React.FC = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="bg-yellow-500 text-slate-900 rounded-2xl p-8">
+            <div className="bg-yellow-500 text-slate-900 rounded-2xl p-8 shadow-lg">
               <h3 className="text-3xl font-bold mb-6 text-center">Мадияр Кыстаубаев</h3>
               <div className="space-y-4 text-lg">
                 <div className="flex items-center space-x-3">
@@ -65,7 +65,7 @@ const SpeakerSection: React.FC = () => {
             </div>
 
             <div className="text-center">
-              <blockquote className="text-xl italic text-gray-300 mb-4">
+              <blockquote className="text-xl italic text-white font-medium mb-4">
                 "Каждый объект — это не просто здание, это финансовый инструмент, 
                 который должен работать на владельца 24/7"
               </blockquote>
@@ -75,7 +75,7 @@ const SpeakerSection: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             {achievements.map((achievement, index) => (
-              <div key={index} className="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
+              <div key={index} className="bg-slate-800 rounded-xl p-6 border border-slate-700 shadow hover:bg-slate-700 transition-colors">
                 <div className="flex items-start space-x-4">
                   <div className="bg-yellow-500 p-3 rounded-lg text-slate-900">
                     {achievement.icon}
@@ -84,7 +84,7 @@ const SpeakerSection: React.FC = () => {
                     <h4 className="font-bold text-lg text-yellow-400 mb-1">
                       {achievement.title}
                     </h4>
-                    <p className="text-gray-300 text-sm">
+                    <p className="text-white text-sm">
                       {achievement.description}
                     </p>
                   </div>
@@ -95,11 +95,11 @@ const SpeakerSection: React.FC = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-slate-800 rounded-lg p-8 max-w-4xl mx-auto">
+          <div className="bg-slate-800 rounded-xl p-8 max-w-4xl mx-auto border border-slate-700 shadow">
             <h3 className="text-2xl font-bold mb-6 text-yellow-400">
               Почему я делюсь своими знаниями?
             </h3>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
               За 15 лет работы я понял: успех в недвижимости — это не везение, а система. 
               Я хочу, чтобы больше людей в Казахстане умели создавать реальную ценность, 
               а не просто покупали квадратные метры в надежде на рост. 
