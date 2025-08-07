@@ -92,10 +92,12 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
 
-            <button className="w-full lg:w-auto bg-yellow-500 hover:bg-yellow-400 text-slate-900 font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
-              <span>Забронировать место на встрече</span>
-              <ArrowRight className="w-6 h-6" />
-            </button>
+            <a href="#contact-form">
+                <button className="w-full lg:w-auto bg-yellow-500 hover:bg-yellow-400 text-slate-900 font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
+                  <span>Забронировать место на встрече</span>
+                  <ArrowRight className="w-6 h-6" />
+                </button>
+            </a>
           </div>
 
           <div className="relative">
