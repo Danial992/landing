@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&display=swap');
 
+/* =========================
+   Базовые стили
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -11,37 +14,48 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
+  background-color: #ffffff;
+  color: #143A41; /* Тёмно-бирюзовый по умолчанию */
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+/* =========================
+   Переменные цветов (бирюзовые)
+========================= */
+:root {
+  --color-teal-dark: #143A41;
+  --color-teal-medium: #38747E;
+  --color-teal-light: #53A4B1;
+  --color-teal-muted: #306770;
+}
+
+/* =========================
+   Скроллбар
+========================= */
 ::-webkit-scrollbar {
   width: 8px;
 }
-
 ::-webkit-scrollbar-track {
   background: #f1f5f9;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #64748b;
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #475569;
 }
 
-/* Animation utilities */
+/* =========================
+   Анимации
+========================= */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -58,68 +72,99 @@ html {
     opacity: 1;
   }
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
 .animate-fadeInUp {
   animation: fadeInUp 0.6s ease-out;
 }
-
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Button hover effects */
+/* =========================
+   Кнопки / Карточки
+========================= */
 button:hover {
   transform: translateY(-2px);
   transition: all 0.2s ease-in-out;
 }
-
-/* Card hover effects */
 .hover-lift:hover {
   transform: translateY(-8px);
   transition: transform 0.3s ease-in-out;
 }
 
-/* Custom gradients */
+/* =========================
+   Градиенты
+========================= */
 .gradient-gold {
   background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
 }
-
 .gradient-blue {
   background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
 }
-
 .gradient-red {
   background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
 }
 
-/* Typography improvements */
+/* =========================
+   Типографика
+========================= */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
   line-height: 1.2;
   font-weight: 700;
 }
 
 p {
   line-height: 1.6;
+  font-weight: 300; /* Inter Light */
 }
 
-/* Responsive text scaling */
+/* =========================
+   Responsive text
+========================= */
 @media (max-width: 640px) {
   h1 {
     font-size: 2rem;
   }
-  
   h2 {
     font-size: 1.5rem;
   }
-  
   .text-5xl {
     font-size: 2.5rem;
   }
-  
   .text-4xl {
     font-size: 2rem;
   }
+}
+
+/* =========================
+   Примеры применения бирюзовых цветов
+========================= */
+.bg-teal-dark {
+  background-color: var(--color-teal-dark);
+}
+.bg-teal-medium {
+  background-color: var(--color-teal-medium);
+}
+.bg-teal-light {
+  background-color: var(--color-teal-light);
+}
+.bg-teal-muted {
+  background-color: var(--color-teal-muted);
+}
+
+.text-teal-dark {
+  color: var(--color-teal-dark);
+}
+.text-teal-medium {
+  color: var(--color-teal-medium);
+}
+.text-teal-light {
+  color: var(--color-teal-light);
+}
+.text-teal-muted {
+  color: var(--color-teal-muted);
 }
