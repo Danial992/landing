@@ -21,22 +21,23 @@ const FinalCTA: React.FC = () => {
           </h2>
         </div>
 
-        <div className="bg-[#306770] rounded-2xl p-8 mb-12">
-          <h3 className="text-2xl font-bold text-center mb-6 text-[#53A4B1]">
-            Пока вы читаете этот текст...
-          </h3>
-          <div className="space-y-4 text-lg text-[#53A4B1] text-center max-w-4xl mx-auto">
-            <p>📈 Курс доллара вырос еще на 0.2%</p>
-            <p>🏢 Ваша недвижимость дешевеет</p>
-            <p>🏗️ Первичка забирает ваших арендаторов</p>
-            <p>🏦 Банки распродают лучшие активы тем, кто знает как с ними работать</p>
-          </div>
-          <div className="text-center mt-8">
-            <p className="text-2xl font-bold text-[#53A4B1]">
-              Встреча 23 августа — это ваш шанс переломить ситуацию.
-            </p>
-          </div>
-        </div>
+<div className="bg-[#306770] rounded-2xl p-8 mb-12">
+  <h3 className="text-2xl font-bold text-center mb-6 text-[#53A4B1]">
+    Пока вы читаете этот текст...
+  </h3>
+  <div className="space-y-4 text-lg text-white text-center max-w-4xl mx-auto">
+    <p>📈 Курс доллара вырос еще на 0.2%</p>
+    <p>🏢 Ваша недвижимость дешевеет</p>
+    <p>🏗️ Первичка забирает ваших арендаторов</p>
+    <p>🏦 Банки распродают лучшие активы тем, кто знает как с ними работать</p>
+  </div>
+  <div className="text-center mt-8">
+    <p className="text-2xl font-bold text-white">
+      Встреча 23 августа — это ваш шанс переломить ситуацию.
+    </p>
+  </div>
+</div>
+
 
         <div className="text-center mb-16">
           <button className="bg-[#53A4B1] hover:bg-[#38747E] text-white font-bold py-6 px-12 rounded-lg text-2xl transition-all transform hover:scale-105 inline-flex items-center space-x-4 shadow-2xl">
