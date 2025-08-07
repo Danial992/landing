@@ -31,19 +31,19 @@ const ProblemsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-red-50">
+    <section className="py-20 px-6 bg-teal-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-            Почему <span className="text-red-600">87% владельцев</span> коммерческой недвижимости теряют деньги прямо сейчас?
+            Почему <span className="text-teal-600">87% владельцев</span> коммерческой недвижимости теряют деньги прямо сейчас?
           </h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {problems.map((problem, index) => (
-            <div key={index} className="bg-white rounded-lg p-6 shadow-lg border-l-4 border-red-500">
+            <div key={index} className="bg-white rounded-lg p-6 shadow-lg border-l-4 border-teal-500">
               <div className="flex items-start space-x-4">
-                <div className="bg-red-100 p-3 rounded-lg text-red-600">
+                <div className="bg-teal-100 p-3 rounded-lg text-teal-600">
                   <X className="w-6 h-6" />
                 </div>
                 <div>
@@ -59,7 +59,7 @@ const ProblemsSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="bg-red-600 text-white rounded-lg p-8 text-center">
+        <div className="bg-teal-600 text-white rounded-lg p-8 text-center">
           <h3 className="text-2xl font-bold mb-4">Усиливающий факт:</h3>
           <p className="text-xl leading-relaxed">
             Склады, которые год назад сдавали по <span className="font-bold">3 000 тг/м²</span>, 
