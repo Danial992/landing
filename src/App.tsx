@@ -9,6 +9,7 @@ import SpeakerSection from './components/SpeakerSection';
 import InvestmentProjects from './components/InvestmentProjects';
 import UrgencySection from './components/UrgencySection';
 import GuaranteesSection from './components/GuaranteesSection';
+import ContactForm from './components/ContactForm';
 import FinalCTA from './components/FinalCTA';
 
 function App() {
