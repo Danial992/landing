@@ -40,10 +40,12 @@ const FinalCTA: React.FC = () => {
 
 
         <div className="text-center mb-16">
+          <a href="#contact-form">
           <button className="bg-[#53A4B1] hover:bg-[#38747E] text-white font-bold py-6 px-12 rounded-lg text-2xl transition-all transform hover:scale-105 inline-flex items-center space-x-4 shadow-2xl">
             <span>Занять место на встрече сейчас</span>
             <ArrowRight className="w-8 h-8" />
           </button>
+          </a>
           <p className="text-[#83b7c2] mt-4">
             Или свяжитесь с нами для консультации
           </p>
