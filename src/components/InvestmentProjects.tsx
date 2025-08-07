@@ -102,11 +102,12 @@ const InvestmentProjects: React.FC = () => {
                     <span className="font-semibold">{project.feature}</span>
                   </div>
                 </div>
-                
+                <a href="#contact-form">
                 <button className="w-full bg-darkTeal hover:bg-mediumTeal text-white font-bold py-3 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2">
                   <span>Узнать детали</span>
                   <ArrowRight className="w-5 h-5" />
                 </button>
+                </a>
               </div>
             </div>
           ))}
@@ -118,9 +119,11 @@ const InvestmentProjects: React.FC = () => {
             Эти проекты доступны только участникам закрытой встречи. 
             После 23 августа условия входа могут измениться.
           </p>
+          <a href="#contact-form">
           <button className="bg-lightTeal hover:bg-mediumTeal text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105">
             Зарезервировать место для инвестирования
           </button>
+          </a>
         </div>
       </div>
     </section>
