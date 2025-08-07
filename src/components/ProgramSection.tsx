@@ -44,29 +44,29 @@ const ProgramSection: React.FC = () => {
     <section className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-            Что конкретно вы узнаете <span className="text-blue-600">за 3 часа</span>
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary-dark mb-6">
+            Что конкретно вы узнаете <span className="text-accent">за 3 часа</span>
           </h2>
         </div>
 
         <div className="space-y-6">
           {program.map((part, i) => (
-            <div key={i} className="bg-slate-50 rounded-lg shadow-lg overflow-hidden">
+            <div key={i} className="bg-primary.light/10 rounded-lg shadow-lg overflow-hidden">
               <div
-                className="bg-slate-800 text-white p-6 cursor-pointer hover:bg-slate-700 transition-colors"
+                className="bg-primary.dark text-white p-6 cursor-pointer hover:bg-primary DEFAULT transition-colors"
                 onClick={() => setExpanded(expanded === i ? null : i)}
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    <div className="bg-yellow-500 p-3 rounded-lg text-slate-900">
+                    <div className="bg-warning p-3 rounded-lg text-primary-dark">
                       {part.icon}
                     </div>
                     <div>
                       <div className="flex items-center space-x-4 mb-2">
-                        <span className="bg-yellow-500 text-slate-900 px-3 py-1 rounded text-sm font-bold">
+                        <span className="bg-warning text-primary-dark px-3 py-1 rounded text-sm font-bold">
                           ЧАСТЬ {i + 1}
                         </span>
-                        <span className="flex items-center space-x-2 text-sm text-gray-300">
+                        <span className="flex items-center space-x-2 text-sm text-white/70">
                           <Clock className="w-4 h-4" />
                           <span>{part.time}</span>
                         </span>
@@ -75,9 +75,9 @@ const ProgramSection: React.FC = () => {
                     </div>
                   </div>
                   {expanded === i ? (
-                    <ChevronUp className="w-8 h-8 text-yellow-400" />
+                    <ChevronUp className="w-8 h-8 text-warning" />
                   ) : (
-                    <ChevronDown className="w-8 h-8 text-yellow-400" />
+                    <ChevronDown className="w-8 h-8 text-warning" />
                   )}
                 </div>
               </div>
@@ -87,10 +87,10 @@ const ProgramSection: React.FC = () => {
                   <ul className="space-y-4">
                     {part.items.map((item, j) => (
                       <li key={j} className="flex items-start space-x-3">
-                        <div className="bg-green-100 rounded-full p-1 mt-1">
-                          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <div className="bg-primary.light rounded-full p-1 mt-1">
+                          <div className="w-2 h-2 bg-primary DEFAULT rounded-full"></div>
                         </div>
-                        <span className="text-lg text-slate-700">{item}</span>
+                        <span className="text-lg text-primary-dark">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -101,7 +101,7 @@ const ProgramSection: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105">
+          <button className="bg-accent hover:bg-accent-dark text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105">
             Зарегистрироваться на встречу
           </button>
         </div>
