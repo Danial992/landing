@@ -101,9 +101,11 @@ const ProgramSection: React.FC = () => {
         </div>
         
       <div className="text-center mt-12">
+      <a href="#contact-form">
           <button className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105">
             Зарегистрироваться на встречу
           </button>
+      </a>
         </div>
       </div>
     </section>
