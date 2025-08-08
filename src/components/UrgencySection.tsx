@@ -6,27 +6,27 @@ const UrgencySection: React.FC = () => {
     {
       icon: <DollarSign className="w-8 h-8 text-[#143A41]" />,
       title: "Курс доллара растет",
-      description: "каждый день промедления = потеря 0.5% капитала",
+      description: "каждый день промедления снижает ваш капитал примерно на 0.5%",
       color: "text-[#143A41]"
     },
     {
       icon: <TrendingUp className="w-8 h-8 text-[#306770]" />,
       title: "Банки распродают активы",
-      description: "окно возможностей закроется через 3-6 месяцев",
+      description: "это окно возможностей будет открыто всего 3–6 месяцев",
       color: "text-[#306770]"
     },
     {
       icon: <AlertTriangle className="w-8 h-8 text-[#53A4B1]" />,
       title: "Ставки аренды взлетели",
-      description: "кто не успел, опоздал на 40% роста",
+      description: "те, кто не успеют, упустят до 40% роста дохода",
       color: "text-[#53A4B1]"
     }
   ];
 
   const limitations = [
-    "Только 20 мест — для качественной проработки каждого кейса",
-    "Без записи — конфиденциальная информация",
-    "Одна встреча — следующая через 6 месяцев"
+    "Только 20 мест — чтобы уделить максимум внимания каждому инвестору",
+    "Без записи — мы работаем только в условиях полной конфиденциальности",
+    "Следующая подобная встреча состоится только через 6 месяцев"
   ];
 
   return (
@@ -34,7 +34,7 @@ const UrgencySection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-[#143A41] mb-6">
-            Почему именно <span className="text-[#53A4B1]">сейчас</span> и почему только <span className="text-[#53A4B1]">20 человек</span>
+            Почему действовать <span className="text-[#53A4B1]">сейчас</span> нужно сейчас и почему мы <span className="text-[#53A4B1]">берём только 20 участников</span>
           </h2>
         </div>
 
@@ -77,8 +77,8 @@ const UrgencySection: React.FC = () => {
               <h3 className="text-3xl font-bold">Время — ваш главный враг</h3>
             </div>
             <p className="text-xl mb-8 leading-relaxed text-[#E6F3F5]">
-              Пока вы думаете, ваши конкуренты уже покупают объекты со скидками, 
-              модернизируют их и захватывают рынок. <br />
+              Пока вы раздумываете, другие инвесторы уже покупают объекты со скидкой, улучшают их и занимают лучшие позиции на рынке.
+Каждый день промедления — это упущенная прибыль. <br />
               <span className="text-[#53A4B1] font-bold">Каждый день промедления стоит денег.</span>
             </p>
             <a href="#contact-form">
