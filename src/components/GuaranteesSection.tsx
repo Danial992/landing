@@ -6,22 +6,22 @@ const GuaranteesSection: React.FC = () => {
     {
       icon: <CheckCircle className="w-6 h-6" />,
       title: "Реальные кейсы с цифрами",
-      description: "никакой воды"
+      description: "только практическая информация без лишней теории"
     },
     {
       icon: <MessageCircle className="w-6 h-6" />,
       title: "Ответы на ваши вопросы",
-      description: "30 минут Q&A"
+      description: "полчаса, чтобы задать любые вопросы и получить честные ответы"
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: "Контакты и связи",
-      description: "познакомитесь с инвесторами"
+      description: "новые полезные контакты в среде активных инвесторов"
     },
     {
       icon: <RefreshCw className="w-6 h-6" />,
       title: "Возврат денег",
-      description: "если не получите конкретных инструментов"
+      description: "если не получите конкретные инструменты для роста дохода"
     }
   ];
 
@@ -30,7 +30,7 @@ const GuaranteesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-[#143A41] mb-6">
-            <span className="text-[#38747E]">Ваши гарантии</span> и наши обязательства
+            <span className="text-[#38747E]">Ваши гарантии</span> — наша ответственность за результат
           </h2>
         </div>
 
@@ -64,11 +64,11 @@ const GuaranteesSection: React.FC = () => {
                 <span className="text-5xl font-bold text-[#53A4B1]">45 000 тг</span>
               </div>
               <p className="text-lg text-gray-300">
-                специальная цена для первых 10 участников
+                Специальная цена только для первых 10 участников — чтобы поощрить тех, кто принимает решения быстро
               </p>
 
               <div className="bg-[#306770] text-white px-4 py-2 rounded-lg inline-block">
-                <p className="font-bold">Осталось 3 места по этой цене</p>
+                <p className="font-bold">Осталось всего 3 места — после этого цена вернётся к обычной</p>
               </div>
 
               <div className="bg-[#53A4B1]/20 border border-[#53A4B1] rounded-lg p-4 mt-6">
@@ -84,9 +84,8 @@ const GuaranteesSection: React.FC = () => {
         <div className="bg-gradient-to-r from-[#38747E] to-[#306770] text-white rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-bold mb-6">100% гарантия возврата денег</h3>
           <p className="text-lg mb-6 max-w-3xl mx-auto leading-relaxed">
-            Если в течение встречи вы не получите конкретных инструментов, 
-            которые можно применить к своим объектам, — мы вернем вам полную стоимость участия. 
-            <span className="font-bold"> Без вопросов и объяснений.</span>
+            Если во время встречи вы не получите чёткие и применимые инструменты для увеличения дохода от вашей недвижимости — мы вернём всю сумму. 
+            <span className="font-bold"> Мгновенно, без вопросов и лишней бюрократии.</span>
           </p>
           <div className="flex items-center justify-center space-x-4">
             <Shield className="w-8 h-8" />
