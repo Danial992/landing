@@ -15,7 +15,7 @@ const SpeakerSection: React.FC = () => {
     },
     {
       icon: <Star className="w-6 h-6" />,
-      title: "IREM CPM",
+      title: "IREM CPM (Certified Property Manager)",
       description: "международная сертификация в процессе"
     },
     {
