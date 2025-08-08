@@ -34,7 +34,7 @@ const CaseStudies: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-            <span className="text-cyan-600">Реальные цифры</span> реальных проектов
+            <span className="text-cyan-600">Реальные</span> результаты проектов
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Каждый кейс подкреплен документами, договорами и финансовыми отчетами
