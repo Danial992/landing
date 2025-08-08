@@ -21,7 +21,7 @@ const SolutionSection: React.FC = () => {
     {
       icon: <CheckCircle className="w-6 h-6 text-cyan-100" />,
       title: "Инсайды рынка",
-      description: "где покупать стрессовые активы банков со скидкой"
+      description: "где и как покупать стрессовые активы банков со скидкой"
     }
   ];
 
