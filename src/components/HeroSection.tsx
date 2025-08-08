@@ -105,6 +105,14 @@ const HeroSection: React.FC = () => {
           <div className="relative">
             <div className="bg-cyan-900 rounded-2xl p-8 shadow-2xl">
               <div className="bg-gradient-to-br from-teal-300 to-teal-500 rounded-xl p-6 text-cyan-900">
+                      
+                {/* Фото спикера */}
+                <img
+                  src="/images/madiyar.jpg" // путь к фото
+                  alt="Мадияр Кыстаубаев"
+                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg"
+                />
+                
                 <h3 className="text-2xl font-bold mb-4">Мадияр Кыстаубаев</h3>
                 <div className="space-y-2 text-sm">
                   <p>🏢 Steeltech Group</p>
