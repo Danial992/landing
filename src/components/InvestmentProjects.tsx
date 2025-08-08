@@ -5,7 +5,7 @@ const InvestmentProjects: React.FC = () => {
   const projects = [
     {
       name: "Бурабай",
-      subtitle: "минимальный риск",
+      subtitle: "минимальный риск, стабильный доход",
       entry: "47 млн тг",
       yield: "40-45% годовых",
       timeline: "с первого месяца",
@@ -15,7 +15,7 @@ const InvestmentProjects: React.FC = () => {
     },
     {
       name: "LIP",
-      subtitle: "средний риск",
+      subtitle: "средний риск, быстрый рост капитала",
       entry: "50 млн тг",
       yield: "70% годовых",
       timeline: "12-18 месяцев",
@@ -25,7 +25,7 @@ const InvestmentProjects: React.FC = () => {
     },
     {
       name: "ЖК Караганда",
-      subtitle: "для крупных инвесторов",
+      subtitle: "для инвесторов, готовых к крупным сделкам",
       entry: "от 300 млн тг",
       yield: "индивидуально",
       timeline: "x3-x5 за 2 года",
@@ -58,10 +58,10 @@ const InvestmentProjects: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Готовые проекты для тех, кто хочет <span className="text-lightTeal">начать сразу</span>
+            Готовые инвестиции, которые начнут <span className="text-lightTeal">приносить доход уже завтра</span>
           </h2>
           <p className="text-xl text-lightTeal max-w-3xl mx-auto">
-            Эксклюзивные инвестиционные возможности только для участников встречи
+            Эти предложения вы не найдёте в открытом доступе — они только для участников встречи
           </p>
         </div>
 
@@ -117,7 +117,7 @@ const InvestmentProjects: React.FC = () => {
           <h3 className="text-2xl font-bold mb-4">⚠️ Эксклюзивные условия</h3>
           <p className="text-lg mb-6 max-w-3xl mx-auto">
             Эти проекты доступны только участникам закрытой встречи. 
-            После 23 августа условия входа могут измениться.
+            После 23 августа вход может стать дороже или условия менее выгодными — сейчас лучший момент.
           </p>
           <a href="#contact-form">
           <button className="bg-lightTeal hover:bg-mediumTeal text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105">
