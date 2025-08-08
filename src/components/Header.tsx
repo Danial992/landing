@@ -5,9 +5,17 @@ const Header: React.FC = () => {
   return (
     <header className="bg-cyan-950 text-white py-4 px-6">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="flex items-center space-x-4">
+        {/* Лого + название */}
+        <div className="flex items-center space-x-3">
+          <img 
+            src="/images/logo.png" 
+            alt="Steeltech Group Logo" 
+            className="w-10 h-10 object-contain"
+          />
           <div className="text-2xl font-bold text-white">Steeltech Group</div>
         </div>
+
+        {/* Информация справа */}
         <div className="hidden md:flex items-center space-x-6 text-sm text-cyan-100">
           <div className="flex items-center space-x-2">
             <Clock className="w-4 h-4 text-cyan-300" />
