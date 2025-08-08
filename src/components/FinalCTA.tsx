@@ -15,9 +15,9 @@ const FinalCTA: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
-            23 августа вы либо <span className="text-[#53A4B1]">начнете зарабатывать</span> на реконструкции,
+            23 августа вы либо <span className="text-[#53A4B1]">начнете зарабатывать</span> на реконструкции недвижимости,
             <br />
-            либо продолжите <span className="text-[#38747E]">терять деньги</span> на инфляции
+            либо позволите <span className="text-[#38747E]">инфляции забирать</span> ваши деньги
           </h2>
         </div>
 
@@ -47,13 +47,13 @@ const FinalCTA: React.FC = () => {
           </button>
           </a>
           <p className="text-[#83b7c2] mt-4">
-            Или свяжитесь с нами для консультации
+            Или получите личную консультацию прямо сегодня
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <div className="bg-[#143A41] rounded-lg p-6">
-            <h4 className="text-xl font-bold mb-4 text-[#53A4B1]">Альтернативные действия:</h4>
+            <h4 className="text-xl font-bold mb-4 text-[#53A4B1]">Свяжитесь с нами напрямую:</h4>
             <div className="space-y-3 text-[#53A4B1]">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-[#53A4B1]" />
@@ -96,7 +96,7 @@ const FinalCTA: React.FC = () => {
             <p>Лицензии на строительную деятельность</p>
           </div>
           <p>
-            Конфиденциальность гарантирована. Все материалы встречи защищены соглашением о неразглашении.
+            Мы гарантируем конфиденциальность. Все материалы встречи защищены соглашением о неразглашении.
           </p>
         </footer>
       </div>
