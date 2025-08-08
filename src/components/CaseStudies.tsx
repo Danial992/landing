@@ -89,7 +89,7 @@ const CaseStudies: React.FC = () => {
           </p>
       <a href="#contact-form">
           <button className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105">
-            Изучить кейсы на встрече
+            Получить разбор кейсов на встрече
           </button>
       </a>
         </div>
