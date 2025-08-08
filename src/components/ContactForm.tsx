@@ -7,9 +7,9 @@ const ContactForm: React.FC = () => {
       className="bg-gradient-to-r from-[#53A4B1] to-[#38747E] py-14 px-4 text-center"
     >
       <div className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
-        <h2 className="text-3xl font-bold mb-6 text-[#143A41]">Свяжитесь с нами</h2>
+        <h2 className="text-3xl font-bold mb-6 text-[#143A41]">Оставьте заявку — мы перезвоним</h2>
         <p className="text-[#306770] mb-8">
-          Заполните форму, и мы свяжемся с вами в ближайшее время.
+          Заполните форму ниже — и уже сегодня мы свяжемся с вами, чтобы обсудить детали.
         </p>
         <form
           action="https://formspree.io/f/your_form_id" // замените на ваш ID
@@ -28,7 +28,7 @@ const ContactForm: React.FC = () => {
             />
           </div>
           <div className="text-left">
-            <label htmlFor="phone" className="block mb-2 font-medium text-[#306770]">Телефон</label>
+            <label htmlFor="phone" className="block mb-2 font-medium text-[#306770]">Телефон для связи</label>
             <input
               type="tel"
               id="phone"
@@ -42,7 +42,7 @@ const ContactForm: React.FC = () => {
             type="submit"
             className="w-full bg-[#143A41] text-white py-3 rounded-xl font-semibold hover:bg-[#306770] transition"
           >
-            Отправить
+            Получить консультацию
           </button>
         </form>
       </div>
